@@ -9,7 +9,7 @@ import SEO from '../../next-seo.config'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider attribute="class" defaultTheme={'dark'}>
       <Layout>
         <DefaultSeo {...SEO} />
         <Component {...pageProps} />
