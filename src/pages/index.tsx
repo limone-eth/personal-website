@@ -5,10 +5,14 @@ import ProjectCard from '@/components/ProjectCard'
 import {H1, H3, Text} from '@/components/Text'
 import {getLatestPosts} from '@/lib/posts'
 import {projects} from '@/lib/projects'
+import Image from "next/image";
 
 const HomePage = ({latestPosts}: { latestPosts: Post[] }) => {
     return (
         <div className="h-full">
+            <div className="mb-6 text-center">
+                <Image src="/lemon.gif" width={120} height={120} alt="Lemon" className="rounded-full"/>
+            </div>
             {/* Bio */}
             <div className="mb-6">
                 <H1 className="mb-6 text-center">Your friendly neighborhood lemon 🍋</H1>
