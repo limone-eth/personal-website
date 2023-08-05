@@ -4,18 +4,19 @@ export default function Document() {
     return (
         <Html>
             <Head>
-                <meta name="twitter:card" content="summary"/>
-                <meta name="twitter:site" content="@limone_eth"/>
-                <meta name="twitter:title" content="Limone - always zesty"/>
+                <meta name="og:card" content="summary"/>
+                <meta name="og:site" content="@limone_eth"/>
+                <meta name="og:title" content="Limone - always zesty"/>
                 <meta
-                    name="twitter:description"
+                    name="og:description"
                     content="Blockchain & Backend Developer."
                 />
                 <meta
-                    name="twitter:image"
+                    name="og:image"
                     content="https://limone.lol/static/images/banner.png"
                 />
-                <meta name="twitter:image:alt" content="Backend Development"/>
+                <meta name="og:image:alt" content="Backend Development"/>
+
                 <link
                     rel="preload"
                     href="/fonts/nunito-sans-v6-latin-regular.woff2"
