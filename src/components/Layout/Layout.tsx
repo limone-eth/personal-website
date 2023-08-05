@@ -10,7 +10,7 @@ const Layout = ({children}: { children: ReactNode }) => {
         <div className="flex flex-col min-h-screen">
             {/* Background animation */}
             <div className="fixed inset-0 opacity-30">
-                <ReactMatrixAnimation tileSet={["🍋"]} tileSize={12}></ReactMatrixAnimation>
+                <ReactMatrixAnimation tileSet={["🍋"]} tileSize={18}></ReactMatrixAnimation>
             </div>
             <main className="flex-grow relative z-10">
                 <Container>{children}</Container>
