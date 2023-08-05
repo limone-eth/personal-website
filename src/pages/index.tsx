@@ -1,11 +1,11 @@
 import React from "react";
+import Image from "next/image";
 import {Post} from 'contentlayer/generated'
 
 import ProjectCard from '@/components/ProjectCard'
 import {H1, H3, Text} from '@/components/Text'
 import {getLatestPosts} from '@/lib/posts'
 import {projects} from '@/lib/projects'
-import Image from "next/image";
 
 const HomePage = ({latestPosts}: { latestPosts: Post[] }) => {
     return (
