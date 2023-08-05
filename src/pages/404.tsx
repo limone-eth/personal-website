@@ -3,7 +3,7 @@ import { NextSeo } from 'next-seo'
 
 import { H1, Text } from '@/components/Text'
 
-const title = '404 – Mattia Pomelli'
+const title = '404 – Limone'
 
 export default function NotFound() {
   return (

@@ -1,6 +1,6 @@
-const title = 'Mattia Pomelli - Web Developer'
-const description = 'Blockchain & Full Stack Web Developer.'
-const url = 'https://tiapome.com'
+const title = 'Limone - always zesty'
+const description = 'Your friendly neighborhood lemon'
+const url = 'https://limone.lol'
 const image = `${url}/static/images/banner.png`
 
 const SEO = {
@@ -16,7 +16,7 @@ const SEO = {
     images: [
       {
         url: image,
-        alt: 'Mattia Pomelli',
+        alt: 'Limone',
         type: 'image/png',
       },
     ],

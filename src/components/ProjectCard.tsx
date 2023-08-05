@@ -1,23 +1,19 @@
+import React from "react";
 import Image from 'next/image'
 
-import { H4, TextSmall } from '@/components/Text'
+import {H3, H4, TextSmall} from '@/components/Text'
 import ExternalLinkIcon from '@/icons/external-link.svg'
 import GithubIcon from '@/icons/github.svg'
 import { Project } from '@/lib/projects'
 
 const ProjectCard = ({ project }: { project: Project }) => {
   const { title, description, tags, url, githubUrl } = project
-  const { logo } = project
-
-  const Logo =
-    typeof logo === 'string'
-      ? () => <Image src={logo} height="40px" width="40px" alt="Project logo" />
-      : project.logo
+  const { logo, emoji } = project
 
   return (
     <div className="border border-base-200 rounded-xl p-6 flex flex-col">
       <header className="flex items-center justify-between">
-        <Logo className="w-10 h-10" />
+          {emoji ? <H3>{emoji}</H3> : <Image src={logo!} height="40px" width="40px" alt="Project logo" />}
         <div className="flex items-center gap-3">
           {githubUrl && (
             <a href={githubUrl} target="_blank" rel="noopener noreferrer">
