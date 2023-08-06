@@ -1,15 +1,36 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
-import { Post } from 'contentlayer/generated'
 
 import ExperienceCard from '@/components/ExperienceCard'
+import NFTCard from '@/components/NFTCard'
 import ProjectCard from '@/components/ProjectCard'
 import { H1, H3, Text } from '@/components/Text'
+import { AirstackERC721TokenType } from '@/lib/airstack/interfaces'
 import { experiences } from '@/lib/experiences'
-import { getLatestPosts } from '@/lib/posts'
 import { projects } from '@/lib/projects'
 
-const HomePage = ({ latestPosts }: { latestPosts: Post[] }) => {
+const HomePage = () => {
+  const [littleLemons, setLittleLemons] = useState<AirstackERC721TokenType[]>(
+    [],
+  )
+
+  useEffect(() => {
+    const fetchLittleLemons = async () => {
+      try {
+        const res = await fetch('/api/nfts', {
+          method: 'GET',
+        })
+        const json = (await res.json()).reverse()
+        console.log(json)
+        setLittleLemons(json)
+      } catch (error) {
+        console.error('Error fetching bubble:', error)
+      }
+    }
+
+    fetchLittleLemons()
+  }, [])
+
   return (
     <div className="h-full">
       <div className="mb-6 text-center">
@@ -63,7 +84,7 @@ const HomePage = ({ latestPosts }: { latestPosts: Post[] }) => {
       </div>
 
       {/* Experiences */}
-      <div>
+      <div className="mb-6">
         <H3 className="mb-3">Experiences</H3>
         <Text className="mb-6">
           Companies I&apos;ve been working with in the past
@@ -77,17 +98,22 @@ const HomePage = ({ latestPosts }: { latestPosts: Post[] }) => {
           ))}
         </div>
       </div>
+
+      {/* Little Lemons NFTs */}
+      <div>
+        <H3 className="mb-3">Little Lemons</H3>
+        <Text className="mb-6">
+          These are all the Little Lemons Friends I&apos;ve collected so far
+        </Text>
+        <div className="grid grid-cols-3 md:grid-cols-[repeat(auto-fill,_minmax(100px,_1fr))]">
+          {littleLemons?.length > 0 &&
+            littleLemons.map((token) => (
+              <NFTCard key={token!.id} nft={token} />
+            ))}
+        </div>
+      </div>
     </div>
   )
 }
 
 export default HomePage
-
-export async function getStaticProps() {
-  const latestPosts = getLatestPosts()
-  return {
-    props: {
-      latestPosts,
-    },
-  }
-}

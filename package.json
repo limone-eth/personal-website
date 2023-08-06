@@ -8,9 +8,12 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.17",
     "@prisma/client": "^4.3.0",
     "classnames": "^2.3.1",
     "contentlayer": "^0.2.7",
+    "cross-fetch": "^4.0.0",
+    "graphql": "^16.7.1",
     "next": "^12.2.5",
     "next-contentlayer": "^0.2.7",
     "next-seo": "^4.20.0",
