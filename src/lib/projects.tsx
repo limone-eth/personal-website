@@ -15,6 +15,15 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: 'Findcaster',
+    description: 'The best place to find people on Farcaster',
+    tags: ['Next.js', 'Farcaster', 'Web3 socials'],
+    url: 'https://findcaster-kappa.vercel.app',
+    githubUrl: 'https://github.com/limone-eth/findcaster',
+    emoji: '🔍',
+    label: 'buildspace s4',
+  },
+  {
     title: 'Split3',
     description: 'The easiest way to split group expenses with crypto',
     tags: ['Next.js', 'RequestNetwork', 'Safe'],
