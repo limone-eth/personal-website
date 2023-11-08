@@ -15,6 +15,15 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: 'threelingo',
+    description: 'The free, fun and effective way to learn web3',
+    tags: ['Next.js', 'Safe', 'Polygon', 'Web3Auth'],
+    url: 'https://threelingo.vercel.app',
+    githubUrl: 'https://github.com/PaoloRollo/threelingo',
+    logo: '/threelingo.png',
+    label: 'ETHLisbon 2023',
+  },
+  {
     title: 'Findcaster',
     description: 'The best place to find people on Farcaster',
     tags: ['Next.js', 'Farcaster', 'Web3 socials'],
@@ -50,6 +59,7 @@ export const projects: Project[] = [
     url: 'https://ethglobal.com/showcase/bob-is-safe-p2ba2',
     githubUrl: 'https://github.com/bob-is-safe/bob-is-safe-frontend',
     logo: '/bob-is-safe.png',
+    label: 'ETHGlobal Lisbon 2022',
   },
   {
     title: 'urbe.eth',
