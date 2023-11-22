@@ -1,5 +1,5 @@
-const title = 'Limone - always zesty'
-const description = 'Your friendly neighborhood lemon'
+const title = 'limone - always zesty'
+const description = 'your friendly neighborhood lemon'
 const url = 'https://limone.lol'
 const image = `${url}/static/images/banner.png`
 

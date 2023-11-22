@@ -45,19 +45,21 @@ const HomePage = () => {
       {/* Bio */}
       <div className="mb-6">
         <H1 className="mb-6 text-center">
-          Your friendly neighborhood lemon 🍋
+          your friendly neighborhood lemon 🍋
         </H1>
         <Text>
-          I&apos;m a Web3 Backend Ninja, enthusiastic about startups and
-          cutting-edge technology. Curiosity drives me to explore beyond my
-          comfort zone, embracing risk and failure as opportunities for personal
-          growth. My dedication lies in Web3, where I continuously experiment
-          with innovative technologies to push boundaries and achieve new
-          heights.
+          i&apos;m a web3 backend ninja, enthusiastic about startups and
+          cutting-edge technology. <br /> curiosity drives me to explore beyond
+          my comfort zone, embracing risk and failure as opportunities for
+          personal growth. <br /> my dedication lies in web3, where i
+          continuously experiment with innovative technologies to push
+          boundaries and achieve new heights.
           <br />
           <br />
-          I&apos;m a community builder, I love to share my knowledge and help
-          others grow. That&apos;s why I started a community for web3 builders (
+          i&apos;m a community builder, i love to share my knowledge and help
+          others grow.
+          <br />
+          that&apos;s why i started a community for web3 builders (
           <a
             href="https://twitter.com/urbeEth"
             target="_blank"
@@ -66,15 +68,15 @@ const HomePage = () => {
           >
             urbe.eth
           </a>
-          ) in my hometown, Rome, where we hangout and learn together.
+          ) in my hometown, rome, where we hangout and learn together.
         </Text>
       </div>
 
       {/* Projects */}
       <div className="mb-6">
-        <H3 className="mb-3">Projects</H3>
+        <H3 className="mb-3">projects</H3>
         <Text className="mb-6">
-          Some of the cool shit I&apos;ve been building lately
+          some of the cool shit I&apos;ve been building lately
         </Text>
         <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))] gap-4">
           {projects.map((project) => (
@@ -85,9 +87,9 @@ const HomePage = () => {
 
       {/* Experiences */}
       <div className="mb-6">
-        <H3 className="mb-3">Experiences</H3>
+        <H3 className="mb-3">experiences</H3>
         <Text className="mb-6">
-          Companies I&apos;ve been working with in the past
+          companies I&apos;ve been working with in the past
         </Text>
         <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))] gap-4">
           {experiences.map((experience) => (
@@ -101,9 +103,9 @@ const HomePage = () => {
 
       {/* Little Lemons NFTs */}
       <div>
-        <H3 className="mb-3">Little Lemons</H3>
+        <H3 className="mb-3">little lemons</H3>
         <Text className="mb-6">
-          These are all the Little Lemons Friends I&apos;ve collected so far
+          these are all the little lemons friends i&apos;ve collected so far
         </Text>
         <div className="grid grid-cols-3 md:grid-cols-[repeat(auto-fill,_minmax(100px,_1fr))]">
           {littleLemons?.length > 0 &&

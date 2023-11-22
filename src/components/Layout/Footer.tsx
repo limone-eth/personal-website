@@ -11,21 +11,28 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Github
+            github
           </a>
           <a
             href="https://warpcast.com/limone.eth"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Farcaster
+            farcaster
           </a>
           <a
-            href="https://twitter.com/limone_eth"
+            href="https://x.com/limone_eth"
             target="_blank"
             rel="noopener noreferrer"
           >
-            X
+            x
+          </a>
+          <a
+            href="https://paragraph.xyz/@limone.eth"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            paragraph
           </a>
         </div>
       </Container>

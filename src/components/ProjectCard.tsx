@@ -12,11 +12,17 @@ const ProjectCard = ({ project }: { project: Project }) => {
 
   return (
     <div className="border border-base-200 rounded-xl p-6 flex flex-col">
-      <header className="flex items-center justify-between">
+      <header className="flex items-center justify-between ">
         {emoji ? (
           <H3>{emoji}</H3>
         ) : (
-          <Image src={logo!} height="40px" width="40px" alt="Project logo" />
+          <Image
+            className="rounded-xl"
+            src={logo!}
+            height="40px"
+            width="40px"
+            alt="Project logo"
+          />
         )}
         <div className="flex items-center gap-3">
           {githubUrl && (

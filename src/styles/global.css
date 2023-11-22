@@ -38,6 +38,14 @@
   src: local(''), url(/fonts/nunito-sans-v6-latin-900.woff2) format('woff2');
 }
 
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local(''), url(/fonts/dk-smiling-cat.otf) format('opentype');
+}
+
 /* Theme */
 :root {
   --primary: #086DFF;
