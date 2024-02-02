@@ -17,7 +17,7 @@ export const projects: Project[] = [
     tags: ['React Native', 'Thirdweb', 'GHO', 'AAVE'],
     url: 'https://ethglobal.com/showcase/ghost-mae3q',
     githubUrl: 'https://github.com/builders-garden/ghost-app',
-    logo: '/ghost-logo.png',
+    logo: '/ghost.png',
     label: 'ethglobal lfgho winner',
   },
   {
