@@ -11,6 +11,16 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: 'ghost',
+    description:
+      'a mobile-native AA smart wallet designed for p2p payments, featuring automatic saving plans and easy-to-use investment features GHO-based.',
+    tags: ['React Native', 'Thirdweb', 'GHO', 'AAVE'],
+    url: 'https://ethglobal.com/showcase/ghost-mae3q',
+    githubUrl: 'https://github.com/builders-garden/ghost-app',
+    logo: '/ghost-logo.png',
+    label: 'ethglobal lfgho winner',
+  },
+  {
     title: 'pulse',
     description:
       'a mobile-first social app that improves your feed based on your social graph and in-app interactions. powered by a dynamic recommendation engine, your content is in perfect sync.',
@@ -18,7 +28,7 @@ export const projects: Project[] = [
     url: 'https://pulse-indol.vercel.app',
     githubUrl: 'https://github.com/PaoloRollo/pulse',
     logo: '/pulse.png',
-    label: 'ethglobal istanbul 2023',
+    label: 'ethglobal istanbul',
   },
   {
     title: 'threelingo',
@@ -45,7 +55,7 @@ export const projects: Project[] = [
     url: 'https://split-3.vercel.app',
     githubUrl: 'https://github.com/mattiapomelli/split3-frontend',
     emoji: '🖖',
-    label: 'ethwarsaw winner',
+    label: 'ethwarsaw winner 2023',
   },
   {
     title: 'bubbles',
@@ -55,7 +65,7 @@ export const projects: Project[] = [
     url: 'https://thebubbles.xyz',
     githubUrl: 'https://github.com/gskril/ethglobal-paris-hack',
     emoji: '🫧',
-    label: 'ETHGlobal Paris Winner',
+    label: 'ethglobal paris winner',
   },
   {
     title: 'bob is safe',

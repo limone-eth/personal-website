@@ -11,6 +11,17 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
+    companyName: 'builders garden',
+    position: 'co-founder & serial hacker',
+    description:
+      'a web3 mvp studio building and launching web3 products in a matter of weeks.',
+    tags: ['Web3'],
+    url: 'https://builders.garden',
+    startDate: 'nov 2023',
+    endDate: 'present',
+    logo: '/builders-garden-logo.png',
+  },
+  {
     companyName: 'backdrop',
     position: 'backend engineer',
     description:
