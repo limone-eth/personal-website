@@ -2,35 +2,12 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 
 import ExperienceCard from '@/components/ExperienceCard'
-import NFTCard from '@/components/NFTCard'
 import ProjectCard from '@/components/ProjectCard'
 import { H1, H3, Text } from '@/components/Text'
-import { AirstackERC721TokenType } from '@/lib/airstack/interfaces'
 import { experiences } from '@/lib/experiences'
 import { projects } from '@/lib/projects'
 
 const HomePage = () => {
-  const [littleLemons, setLittleLemons] = useState<AirstackERC721TokenType[]>(
-    [],
-  )
-
-  useEffect(() => {
-    const fetchLittleLemons = async () => {
-      try {
-        const res = await fetch('/api/nfts', {
-          method: 'GET',
-        })
-        const json = (await res.json()).reverse()
-        console.log(json)
-        setLittleLemons(json)
-      } catch (error) {
-        console.error('Error fetching bubble:', error)
-      }
-    }
-
-    fetchLittleLemons()
-  }, [])
-
   return (
     <div className="h-full">
       <div className="mb-6 text-center">
@@ -48,12 +25,12 @@ const HomePage = () => {
           your friendly neighborhood lemon 🍋
         </H1>
         <Text>
-          i&apos;m a web3 backend ninja, enthusiastic about startups and
-          cutting-edge technology. <br /> curiosity drives me to explore beyond
-          my comfort zone, embracing risk and failure as opportunities for
-          personal growth. <br /> my dedication lies in web3, where i
-          continuously experiment with innovative technologies to push
-          boundaries and achieve new heights.
+          i&apos;m a serial hacker, always experimenting with new stuff in web3
+          and frontier tech. <br /> curiosity drives me to explore beyond my
+          comfort zone, embracing risk and failure as opportunities for personal
+          growth. i love decentralized socials, and i&apos;m very active on
+          farcaster, where i share my ideas, projects and
+          recently built a bunch of frames.
           <br />
           <br />
           i&apos;m a community builder, i love to share my knowledge and help
@@ -68,7 +45,8 @@ const HomePage = () => {
           >
             urbe.eth
           </a>
-          ) in my hometown, rome, where we hangout and learn together.
+          ) in my hometown, rome, where we hangout, learn and build cool shit
+          together.
         </Text>
       </div>
 
@@ -98,20 +76,6 @@ const HomePage = () => {
               experience={experience}
             />
           ))}
-        </div>
-      </div>
-
-      {/* Little Lemons NFTs */}
-      <div>
-        <H3 className="mb-3">little lemons</H3>
-        <Text className="mb-6">
-          these are all the little lemons friends i&apos;ve collected so far
-        </Text>
-        <div className="grid grid-cols-3 md:grid-cols-[repeat(auto-fill,_minmax(100px,_1fr))]">
-          {littleLemons?.length > 0 &&
-            littleLemons.map((token) => (
-              <NFTCard key={token!.id} nft={token} />
-            ))}
         </div>
       </div>
     </div>

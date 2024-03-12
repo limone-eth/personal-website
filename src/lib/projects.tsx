@@ -11,6 +11,16 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: 'papabase',
+    description:
+      'Making public goods donations accessible to everyone through crypto and fiat.',
+    tags: ['React Native', 'Thirdweb', 'GHO', 'AAVE'],
+    url: 'https://devfolio.co/projects/papabase-7d6b',
+    githubUrl: 'https://github.com/builders-garden/papabase',
+    logo: '/papabase.svg',
+    label: 'ethdenver 2024',
+  },
+  {
     title: 'ghost',
     description:
       'a mobile-native AA smart wallet designed for p2p payments, featuring automatic saving plans and easy-to-use investment features GHO-based.',
