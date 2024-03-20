@@ -11,6 +11,16 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: 'fluidpay',
+    description:
+      'fluidpay is a mobile-first p2p payments app running on Base and USDC-centric, integrating smart account, stealth addresses and virtual cards to offer a seamless and secure experience with empowered privacy.',
+    tags: ['Next.js', 'Dynamic', 'Safe', 'GnosisPay'],
+    url: 'https://ethglobal.com/showcase/fluidpay-tpqvz',
+    githubUrl: 'https://github.com/builders-garden/fluidpay',
+    logo: '/fluidpay.svg',
+    label: 'ethglobal london 2024',
+  },
+  {
     title: 'papabase',
     description:
       'Making public goods donations accessible to everyone through crypto and fiat.',
