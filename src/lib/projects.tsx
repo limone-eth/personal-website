@@ -11,6 +11,16 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: 'espresso',
+    description:
+      'espressoa tablet-first app that helps merchant setting up their shop and start accepting payments in crypto. Within the app merchants can create their shop, add items and sell goods to their customers just by having them scanning a QR Code.',
+    tags: ['Next.js', 'Dynamic', 'Safe', 'GnosisPay'],
+    url: 'https://espresso.builders.garden',
+    githubUrl: 'https://github.com/builders-garden/espresso-app',
+    logo: '/espresso.png',
+    label: 'ethbucarest 2024',
+  },
+  {
     title: 'fluidpay',
     description:
       'fluidpay is a mobile-first p2p payments app running on Base and USDC-centric, integrating smart account, stealth addresses and virtual cards to offer a seamless and secure experience with empowered privacy.',
