@@ -41,7 +41,7 @@ export const projects: Project[] = [
   {
     title: 'plink',
     description:
-      'plink is your mobile usdc shortcut making it easy to send money to your friends and family',
+      'your mobile usdc shortcut making it easy to send money to your friends and family',
     tags: ['Next.js', 'Dynamic', 'Safe', 'GnosisPay'],
     url: 'https://plink.finance',
     githubUrl: 'https://github.com/builders-garden/fluidpay-app',
@@ -51,7 +51,7 @@ export const projects: Project[] = [
   {
     title: 'espresso',
     description:
-      'espressoa tablet-first app that helps merchant setting up their shop and start accepting payments in crypto. Within the app merchants can create their shop, add items and sell goods to their customers just by having them scanning a QR Code.',
+      'a tablet-first app that helps merchant setting up their shop and start accepting payments in crypto. Within the app merchants can create their shop, add items and sell goods to their customers just by having them scanning a QR Code.',
     tags: ['Next.js', 'Dynamic', 'Safe', 'GnosisPay'],
     url: 'https://espresso.builders.garden',
     githubUrl: 'https://github.com/builders-garden/espresso-app',
