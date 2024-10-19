@@ -11,6 +11,14 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: 'drift',
+    description:
+      'unlocking the future of commerce with simple, secure, and scalable onchain payment solutions',
+    tags: ['Next.js', 'Stablecoin'],
+    url: 'https://drift.money',
+    logo: '/drift.svg',
+  },
+  {
     title: 'beearly',
     description:
       'no-code waitlist frames to get early adopters for your products',

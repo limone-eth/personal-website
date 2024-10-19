@@ -15,7 +15,7 @@ const Layout = ({children}: { children: ReactNode }) => {
             <main className="flex-grow relative z-10">
                 <Container>{children}</Container>
             </main>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }
