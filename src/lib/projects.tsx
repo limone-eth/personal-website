@@ -13,7 +13,7 @@ export const projects: Project[] = [
   {
     title: 'drift',
     description:
-      'unlocking the future of commerce with simple, secure, and scalable onchain payment solutions',
+      'making in-store stablecoin payments real',
     tags: ['Next.js', 'Stablecoin'],
     url: 'https://drift.money',
     logo: '/drift.svg',

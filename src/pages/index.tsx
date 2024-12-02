@@ -106,9 +106,8 @@ const HomePage = () => {
             >
               Drift
             </a>
-            , where i&apos;m empowering onchain commerce through stablecoins,
-            making transactions simpler and more accessible for businesses and
-            users alike.
+            , where i&apos;m empowering IRL shops with faster and cheaper
+            digital payments through stablecoins.
           </p>
         </Text>
       </div>
