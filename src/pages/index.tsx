@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 
 import ExperienceCard from '@/components/ExperienceCard'
@@ -66,14 +65,15 @@ const HomePage = () => {
             risk and failure as opportunities for growth. my passion for
             decentralized social platforms keeps me active on{' '}
             <a
-              href="https://warpcast.com/limone.eth"
+              href="https://farcaster.xyz/limone.eth"
               target="_blank"
               rel="noreferrer"
               className="text-primary font-semibold"
             >
               farcaster
             </a>
-            , where i share insights, projects, and recent innovations.
+            , where i share insights, ship mini-apps, and experiment with new
+            mechanics for social coordination.
           </p>
           <br />
           <p>
@@ -85,29 +85,54 @@ const HomePage = () => {
               className="text-primary font-semibold"
             >
               urbe.eth
-            </a>
-            , a vibrant community for web3 builders. we launched the first web3
-            hub in italy, a space for builders like us to meet, co-work, and
-            collaborate on frontier tech projects. here, we come together to
-            learn, share knowledge, and create exciting projects. over the
-            years, i&apos;ve attended and won numerous major eth hackathons
-            worldwide, building a diverse range of mvps and consumer crypto
-            applications—from social networking to advertising and payment
-            solutions.
-          </p>
-          <br />
-          <p>
-            currently, i&apos;m focused on{' '}
+            </a>{' '}
+            — a vibrant community for web3 builders. we launched{' '}
             <a
-              href="https://drift.money"
+              href="https://urbe.build/urbe-hub"
               target="_blank"
               rel="noreferrer"
               className="text-primary font-semibold"
             >
-              Drift
+              the first web3 hub in italy
             </a>
-            , where i&apos;m empowering IRL shops with faster and cheaper
-            digital payments through stablecoins.
+            : a space where devs, designers, and dreamers meet, co-work, and build together. from hackathons to bootcamps, it&apos;s where ideas turn into prototypes and strangers into collaborators.
+          </p>
+          <br />
+          <p>
+            i also co-founded{' '}
+            <a
+              href="https://builders.garden"
+              target="_blank"
+              rel="noreferrer"
+              className="text-primary font-semibold"
+            >
+              builders garden
+            </a>
+            , a web3 product studio and experimental playground. we help
+            protocols and startups test new SDKs, ship MVPs, and spark adoption
+            through real products, not pitch decks.
+          </p>
+          <br />
+          <p>
+            over the years, i&apos;ve attended (and won) major eth hackathons
+            across the globe, building everything from social games and crypto
+            wallets to stablecoin payment tools and onchain ads. i believe in
+            learning by building — fast, scrappy, and always a bit weird.
+          </p>
+          <br />
+          <p>
+            currently, i&apos;m focused on building social mini-apps and games
+            on{' '}
+            <a
+              href="https://farcaster.xyz/limone.eth"
+              target="_blank"
+              rel="noreferrer"
+              className="text-primary font-semibold"
+            >
+              farcaster
+            </a>{' '}
+            — crafting playful, viral experiences that bring people onchain
+            without them even realizing it.
           </p>
         </Text>
       </div>

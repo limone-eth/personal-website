@@ -11,6 +11,14 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: 'farville',
+    description:
+      'farming simulation game on farcaster',
+    tags: ['Next.js', 'Farcaster', 'Web3 socials', "Mini App"],
+    url: 'https://farville.farm',
+    logo: '/farville.svg',
+  },
+  {
     title: 'drift',
     description:
       'making in-store stablecoin payments real',
